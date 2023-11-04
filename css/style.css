@@ -1,3 +1,150 @@
 .hidden {
-    display: none;
+    display: none !important;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+    filter: brightness(0.7);
+}
+
+body {
+    color: white;
+    text-align: center;
+}
+#login-form {
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+}
+#login-form input {
+    position: absolute;
+    width:300px;
+    height:30px;
+    font-size:20px;
+}
+#login-form button {
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    padding: 10px 30px;
+}
+
+h1 {
+    position: relative;
+    top: 150px;
+    font-size: 72px;
+}
+
+h2 {
+    position: relative;
+    top: 90px;
+    font-size: 25px;
+}
+
+#todo-form {
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+}
+#todo-form input {
+    position: absolute;
+    width:380px;
+    height:20px;
+    padding: 10px;
+    font-size:15px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px;
+}
+#todo-box {
+    position: relative;
+    top: 150px;
+    margin: 0 auto;
+    color: black;
+    width: 400px;
+    height: 19vw;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+#todo-list li {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.2rem;
+    border-bottom: 1px solid #ddd;
+    width: 320px;
+}
+#todo-list li>span {
+    font-size: 15px;
+}
+#todo-list li>button {
+    position: absolute;
+    right: 3%;
+    background-color: white;
+    border: 0;
+}
+
+#quote {
+    position: absolute;
+    bottom: 50px;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+}
+#quote span:first-child {
+    font-size: 20px
+}
+#quote span:last-child {
+    position: absolute;
+    top: 30px;
+    font-size: 15px
+}
+
+#weather {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    display: flex;
+    justify-content: right;
+}
+#weather span:first-child {
+    font-size: 20px;
+}
+#weather span:last-child {
+    position: absolute;
+    top: 24px;
+    font-size: 15px;
+}
+
+.scroll-x {
+    overflow-x: hidden;
+    overflow-y: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.scroll-x::-webkit-scrollbar {
+    width: 10px;
+}
+.scroll-x::-webkit-scrollbar-thumb {
+    background-color: #2f3542;
+    border-radius: 10px;
+}
+.scroll-x::-webkit-scrollbar-track {
+    background-color: grey;
+    border-radius: 10px;
+
 }
